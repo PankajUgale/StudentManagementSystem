@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Add Student</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #74ebd5, #ACB6E5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .form-container {
+      background: #fff;
+      padding: 40px 50px;
+      border-radius: 15px;
+      box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
+      width: 400px;
+    }
+
+    .form-container h2 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 30px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: bold;
+      color: #555;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      transition: border-color 0.3s;
+    }
+
+    input[type="text"]:focus {
+      border-color: #4A90E2;
+      outline: none;
+    }
+
+    input[type="submit"] {
+      width: 100%;
+      background-color: #4A90E2;
+      color: white;
+      border: none;
+      padding: 12px;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #357ABD;
+    }
+  </style>
+</head>
+<body>
+
+<div class="form-container">
+  <h2>Add Student</h2>
+  <form action="addstudent" method="post">
+    <div class="form-group">
+      <label for="rollno">Roll No:</label>
+      <input type="text" id="rollno" name="rollno">
+    </div>
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name">
+    </div>
+    <div class="form-group">
+      <label for="course">Course:</label>
+      <input type="text" id="course" name="course">
+    </div>
+    <div class="form-group">
+      <label for="cjava">Core Java:</label>
+      <input type="text" id="cjava" name="cjava">
+    </div>
+    <div class="form-group">
+      <label for="adjava">Advanced Java:</label>
+      <input type="text" id="adjava" name="adjava">
+    </div>
+    <div class="form-group">
+      <label for="ui">UI:</label>
+      <input type="text" id="ui" name="ui">
+    </div>
+    <div class="form-group">
+      <label for="db">Database:</label>
+      <input type="text" id="db" name="db">
+    </div>
+    <div class="form-group">
+      <label for="tools">Tools:</label>
+      <input type="text" id="tools" name="tools">
+    </div>
+    <input type="submit" value="Add Student">
+  </form>
+</div>
+
+</body>
+</html>
