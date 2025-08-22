@@ -11,7 +11,7 @@
 <% 
 Student st=(Student)request.getAttribute("st");
 out.println("page belongs to:"+st.getName()+"<br>");
-out.println("-------------------------"+"<br>");
+out.println("--------------------------"+"<br>");
 
 out.print("Rollno:"+st.getRollno()+"&nbsp;&nbsp;");
 out.print("Name:"+st.getName()+"&nbsp;&nbsp;");
@@ -23,4 +23,5 @@ out.print("Result:"+st.getResult()+"&nbsp;&nbsp;");
 <a href="viewsm">ViewMarks</a>
 <a href="slogout">Logout</a>
 </body>
+
 </html>
