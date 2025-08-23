@@ -11,7 +11,7 @@
 <%
 AdminBean ab=(AdminBean)session.getAttribute("abean");
 out.println("Page belongs to admin:"+ab.getFname()+"<br>");
-out.println("-----------------------------"+"<br>");
+out.println("---------------------------"+"<br>");
 Student st = (Student)request.getAttribute("st");
 %>
 <form action="update" method="post">
@@ -25,4 +25,5 @@ Tools: <input type="text" name="tools" value=<%=st.getMk().getTools()%>><br>
 </form>
 
 </body>
+
 </html>
