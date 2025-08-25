@@ -11,9 +11,10 @@
 
 	session.removeAttribute("st");
 	session.invalidate();
-	out.println("Logout SuccessFull!!!!!!!"+"<br>");
+	out.println("Logout SuccessFull!!!!!!"+"<br>");
 
 %>
 <%@ include file="home.html" %>
 </body>
+
 </html>
